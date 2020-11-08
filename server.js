@@ -1,5 +1,4 @@
 const express = require('express');
-const app = express();
 const logger = require('morgan');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -18,7 +17,8 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
 
-require("./routes/api-routes.js")(app);
+app.use('/', require('./routes/htmlRoutes'));
+app.use('/api', require('./routes/apiRoutes'));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/public/index.html"));
