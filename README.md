@@ -16,7 +16,7 @@ This application is an exercise and fitness tracker that can be use to create an
 * [Heroku Deployed Link](https://blooming-forest-35913.herokuapp.com/)
 * [Usage Demo Video](https://drive.google.com/file/d/11-71WZjT7LedjfG76gK2C4HcvHKypzzP/view)
 
-![Demo GIF](./public/assets/img/demo.gif)
+![Demo GIF](./public/img/demo.gif)
 
 ## Installation
 It is recommended to use the application through the deployed link as it is linked to MongoDB Cluster.
